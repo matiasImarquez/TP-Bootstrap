@@ -1,0 +1,46 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+}
+
+/* Menu */
+
+#menu a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+#menu button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Imagenes */
+
+.carousel-inner {
+  max-height: 40rem;
+}
+
+/* Para Pantallas Medias */
+
+@media (max-width:768px) {
+  #intro {
+    width: 90% !important;
+  }
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+
+/* Para Pantallas Pequeñas */
+
+@media (max-width: 576px) {
+  .icono-wrap{
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  
+}
