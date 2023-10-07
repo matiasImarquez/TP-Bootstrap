@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -96,33 +96,33 @@
 
 
   <!-- inicio de Cards Group -->
-  <section class="my-5 container-fluid">
-    <h2 class="text-center">Card Group / Grupo de Cartas</h2>
+  <section class="my-5 container-fluid" id="patologias">
+    <h2 class="text-center">Patologías Visuales</h2>
     <div class="card-group row w-75 mx-auto servicio-fila gap-3">
       <div class="card col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
         <img src="./img/miopia.jpg" class="card-img-top" alt="miopia">
         <div class="card-body">
-          <span class="badge text-bg-success">Diágnostico</span>
-          <span class="badge text-bg-danger">MIOPIA</span>
-          <h5 class="card-title">Miopía</h5>
+          <span class="badge rounded-pill bg-danger">Diágnostico</span>
+          <span class="badge rounded-pill bg-primary">MIOPIA</span>
+
           <p class="card-text">Los objetos cercanos se ven claramente, y los lejanos se ven borrosos.</p>
         </div>
       </div>
       <div class="card col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
         <img src="./img/hipermetropia.jpg" class="card-img-top" alt="hipermetropia">
         <div class="card-body">
-          <span class="badge text-bg-warning text-danger">Diágnostico</span>
-          <span class="badge text-bg-secondary">HIPERMETROPÍA</span>
-          <h5 class="card-title">Hipermetropia</h5>
+          <span class="badge rounded-pill bg-danger">Diágnostico</span>
+          <span class="badge rounded-pill bg-success">HIPERMETROPÍA</span>
+
           <p class="card-text">Los objetos lejanos se ven claramente, y los cercanos se ven borrosos.</p>
         </div>
       </div>
       <div class="card col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
         <img src="./img/astigmatismo.jpg" class="card-img-top" alt="astigmatismo">
         <div class="card-body">
-          <span class="badge text-bg-warning text-danger">Diágnostico</span>
-          <span class="badge text-bg-danger">ASTIGMATISMO</span>
-          <h5 class="card-title">Astigmatismo</h5>
+          <span class="badge rounded-pill bg-danger">Diágnostico</span>
+          <span class="badge rounded-pill bg-warning text-dark">ASTIGMATISMO</span>
+
           <p class="card-text">Dificulta la visión de detalles sútiles, ya sea de cerca o de distancia.</p>
         </div>
       </div>
@@ -131,7 +131,7 @@
 
   <!-- Cards Group 2 Columnas -->
 
-  <section class="my-5">
+  <section class="my-5" id="recetas">
     <h2 class="text-center">Como Interpretar Recetas Oftalmológicas</h2>
     <div id="Patologías" class="card mb-3">
       <div class="row g-0">
@@ -151,64 +151,54 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-  <!-- 
-    Formulario
-  -->
-
-  <section id="seccion-contacto" class="border-bottom border-secondary border-2">
-    <div id="bg-contacto">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#1b2a4e" fill-opacity="1"
-          d="M0,128L40,133.3C80,139,160,149,240,133.3C320,117,400,75,480,96C560,117,640,203,720,250.7C800,299,880,309,960,304C1040,299,1120,277,1200,277.3C1280,277,1360,299,1400,309.3L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-        </path></svg>
-    </div>
-    <!-- 
-    Formulario
-  -->
-    <div class="container " id="contenedor-formulario">
-      <div id="titulo-formulario" class="text-center mb-4">
-        <div><img src="./img/contactos.png" alt="contactos" class="img-fluid"></div>
-        <h2>Contactos</h2>
-        <p class="fs-5">Estamos aqui para solucionar tus necesidades visuales</p>
+  <section class="border border-primary rounded col-6 mx-auto">
+    <h2 class="text-center">Espacio de Consultas</h2>
+    <form>
+      <div class="mb-3 col-9 mx-auto">
+        <label for="exampleInputEmail1" class="form-label text-center">Correo</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@gmail.com"
+          aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Nunca brindaremos tus datos a otras personas o empresas.</div>
       </div>
-      <form action="">
-        <div class="mb-3">
-          <input type="text" class="form-control" id="nombre" placeholder="Lionel Messi" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="mb-3">
-          <button type="button" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
 
-        </div>
-      </form>
-    </div>
-
+      <div class="mb-3 col-9 mx-auto">
+        <label for="exampleInputPassword1" class="form-label text-center">Nombre</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Lionel Messi">
+      </div>
+      <div class="mb-3 col-9 mx-auto">
+        <label for="exampleFormControlTextarea1" class="form-label">Dejános tu Consulta</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="mb-3 btn btn-primary col-9">Enviar</button>
+        <button type="button" class="mb-3 btn btn-success col-9">Limpiar</button>
+      </div>
+    </form>
   </section>
 
   <!-- 
     Footer
   -->
-  <footer class="w-100 d-flex align-items justify-content-center flex-wrap center">
-    <p class="fs-5 px-3 pt-3">Óptica On Line &copy; Todos los Derechos Reservados 2023</p>
-    <div id="iconos">
-      <a href="#"><i class="bi bi-whatsapp"></i></i></a>
-      <a href=""><i class="bi bi-facebook"></i></a>
-      <a href=""><i class="bi bi-instagram"></i></a>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <a href="#intro">Inicio</a>
+      </div>
+      <div class="col">
+        <a href="#patologias">Patologías Visuales</a>
+      </div>
+      <div class="col">
+        <a href="#recetas">Recetas Oftalmológicas</a>
+      </div>
+      <div class="col">
+        <a href="#">Privacidad de Datos</a>
+      </div>
+      <div class="col">
+        <a href="#https://opticajure.com.ar/">Ópticas Amigas</a>
+      </div>
+
     </div>
   </footer>
-
 
 
 
