@@ -1,0 +1,28 @@
+.tickets-form .ticketsOutput {
+  width: 100%;
+  background-color: rgb(155, 200, 222);
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  color: var(--gray-900);
+}
+
+.ticketsOutput .ticketsValue {
+  float: left;
+}
+
+.ticketsOutput .ticketsBuy {
+  float: right;
+  cursor: pointer;
+}
+
+.tickets-form .ticketsBuy::after {
+  font: var(--fa-font-solid);
+}
+
+.tickets-form .btnTickets {
+  width: 49%;
+  background-color: #009349;
+  color: var(--gray-100);
+  margin: 0.5rem 0;
+}
